@@ -1,7 +1,7 @@
 import streamlit as st
 import image
 import regression
-import text3
+import text4
 
 st.title("Deep learning app 🧠")
 
@@ -15,4 +15,4 @@ if option == "Image Classifier":
 elif option == "Regression (Median house value)":
     regression.main()
 elif option == "Text Classifier (Review sentiment)":
-    text3.main()
+    text4.main()
