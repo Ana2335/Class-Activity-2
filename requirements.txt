@@ -1,7 +1,5 @@
-flask
 streamlit
-tensorflow==2.15.0
-keras
+tf-nightly
 numpy
 Pillow
 scikit-learn
