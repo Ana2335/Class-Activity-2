@@ -13,12 +13,8 @@ def main():
     st.header("Movie Review Sentiment Classifier 🎬💕")
 
     # Cargar modelo 
-    @st.cache_resource
-    def load_model():
-        with open("text_4.pkl", "rb") as f:
-            return pickle.load(f)
-
-    model_text = load_model()
+    picklefile = open("text2.pkl", "rb")
+    model_text = pickle.load(picklefile)
 
     # Tokenizer basado en IMDB
     vocab_size = 10000
