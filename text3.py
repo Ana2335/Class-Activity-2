@@ -23,9 +23,11 @@ def main():
     # Tokenizer basado en IMDB
     vocab_size = 10000
     max_len = 500
-    word_index = imdb.get_word_index()
+    #word_index = imdb.get_word_index()
+    #tokenizer = Tokenizer(num_words=vocab_size)
+    #tokenizer.word_index = word_index
     tokenizer = Tokenizer(num_words=vocab_size)
-    tokenizer.word_index = word_index
+    tokenizer.fit_on_texts(imdb['train']['text'])
 
     # Entrada del usuario
     text = st.text_area("Write a movie review:", "This movie was terrible")
