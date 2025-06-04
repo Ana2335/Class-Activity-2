@@ -9,7 +9,7 @@ def main():
                 5: "Dog 🐶", 6: "Frog 🐸", 7: "Horse 🐴", 8: "Ship ⛵️", 9: "Truck 🚚"}
 
     # Subir modelo
-    picklefile = open("image.pkl", "rb")
+    picklefile = open("image2.pkl", "rb")
     model_image = pickle.load(picklefile)
 
     st.header("Image Classifier 📷")
