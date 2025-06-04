@@ -5,8 +5,8 @@ import numpy as np
 def main():
 
     # Cargar el modelo
-    with open("regression.pkl", "rb") as model_file:
-        model_regression = pickle.load(model_file)
+    picklefile = open("regression2.pkl", "rb")
+    model_regression = pickle.load(picklefile)
 
     st.header("Predict the median house value for California districts 🏠")
     st.write("Enter the characteristics to estimate the average value of a home (in dollars)")
