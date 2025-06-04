@@ -9,8 +9,6 @@ def main():
                 5: "Dog 🐶", 6: "Frog 🐸", 7: "Horse 🐴", 8: "Ship ⛵️", 9: "Truck 🚚"}
 
     # Subir modelo
-    #with open("image.pkl", "rb") as model_file:
-    #    model_image = pickle.load(model_file)
     picklefile = open("image.pkl", "rb")
     model_image = pickle.load(picklefile)
 
