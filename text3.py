@@ -1,9 +1,9 @@
 import streamlit as st
 import pickle
 import numpy as np
-from keras.preprocessing.sequence import pad_sequences
-#from tensorflow.keras.datasets import imdb
-from keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.datasets import imdb
+from tensorflow.keras.preprocessing.text import Tokenizer
 from datasets import load_dataset
 
 def main():
